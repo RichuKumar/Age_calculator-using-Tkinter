@@ -101,20 +101,16 @@ class AgeCalculator():
             mbox.showerror("Error", "Given date is earlier than birth date.")
             return
 
-        # Calculate the age
+    
         age = given_year - birth_year
 
         # Adjust age if the given birthday has not occured
         if (given_month, given_day) < (birth_month, birth_day):
             age -= 1
-
-        # Calculate the difference in months and days
         if (given_month, given_day) >= (birth_month, birth_day):
             extra_months = given_month - birth_month
             extra_days = given_day - birth_day
         else:
-            # Handle underflow for days and months
-            # Adding 12 months to age and adjusting month
             if given_month >= birth_month:
                 extra_months = given_month - birth_month - 1
             else:
@@ -136,7 +132,7 @@ class AgeCalculator():
         self.final_days_entry.insert(0, extra_days)
 
 
-# Create the AgeCalculator instance
+
 age_calculator = AgeCalculator()
 age_calculator.root.mainloop()
 
