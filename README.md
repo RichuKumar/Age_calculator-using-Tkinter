@@ -1,10 +1,11 @@
-#Project Name: Tkinter Login Page
+#Project Name: Age Calculator
+
 
 Description:-
-  This project is a simple login page built using Python and Tkinter. It serves as a starting point for creating desktop applications with user authentication functionality. The goal is to demonstrate how to set up a basic login page with user validation.
+  This project is an age calculator application built using Python and Tkinter. It allows users to enter their birthdate and calculate their age in years, months, and days. The goal of this project is to demonstrate basic Tkinter GUI programming and date manipulation in Python.
 
 Features:-
-  User login with username and password fields
-  Basic validation to check for correct login credentials
-  Tkinter-based graphical interface
-  Instructions for setting up and running the project in PyCharm
+  User-friendly graphical interface with Tkinter
+  Inputs for year, month, and day of birth
+  Calculates age in years, months, and days
+  Error handling for invalid dates
